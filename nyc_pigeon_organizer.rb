@@ -39,5 +39,18 @@ def nyc_pigeon_organizer(data)
 end
 
 def alternate_data_set(data)
-  
+  pigeon_data = {
+  :color => {
+    :brown => ["Luca"],
+    :black => ["Lola"],
+  },
+  :gender => {
+    :male => ["Luca"],
+    :female => ["Lola"]
+  },
+  :lives => {
+    "Central Park" => ["Lola"],
+    "Library" => ["Luca"]
+  }
+}
 end
