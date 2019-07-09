@@ -38,19 +38,16 @@ def nyc_pigeon_organizer(data)
 }
 end
 
-def alternate_data_set(data)
-  pigeon_data = {
-  :color => {
-    :brown => ["Luca"],
-    :black => ["Lola"],
-  },
-  :gender => {
-    :male => ["Luca"],
-    :female => ["Lola"]
-  },
-  :lives => {
-    "Central Park" => ["Lola"],
-    "Library" => ["Luca"]
-  }
-}
+def nyc_pigeon_organizer(data)
+    pigeon_list = {}
+    data.each do |key, values|
+     values.each do |values, names|
+        names.each dp |name|
+         pigeon_list[name] ||= {}
+         pigeon_list[name] [key] ||= []
+         pigeon_list[name] [key] << value.to_s 
+     end
+    end
+  end
+  pigeon_list
 end
